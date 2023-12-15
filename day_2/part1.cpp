@@ -120,7 +120,6 @@ int main()
             r.skip_set({' '});
 
             auto const str = r.read_word();
-            // std::cout << r.remaining() << '\n';
 
             if (str == "blue")
             {

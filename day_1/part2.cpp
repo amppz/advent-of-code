@@ -84,16 +84,13 @@ int main()
                 if (is_digit(c))
                 {
                     num1 = chartoi(c);
-                    //std::cout << "Chr: " << num1 << '\n';
                     if (!num0)
                         num0 = num1;
                 }
                 cursor += 1;
             }
         }
-        //std::cout << "Nums: {" << *num0 << ", " << num1 << "}\n";
 
-        //std::cout << '\n';
         num_sum += (*num0) * 10 + num1;
         num0 = std::nullopt;
     }
